@@ -1,0 +1,19 @@
+.container{ 
+    max-width: 800px;
+}
+        
+.upload-box{
+    border: 2px dashed #ccc; 
+    padding: 2rem; 
+    text-align: center;
+}
+.btn-custom{
+    background-color: #0d6efd;
+    color: white;
+}
+.card{
+    transition: transform 0.2s;
+}
+.card:hover{
+    transform: translateY(-2px);
+}
