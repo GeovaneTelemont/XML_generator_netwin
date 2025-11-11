@@ -195,7 +195,7 @@ def processar_enderecos_otimizado(df_enderecos, df_roteiro_aparecida, df_roteiro
         "VERIFICAR RESULTADO >10"
     ]
     
-    df['VALIDAÇÃO'] = np.select(conditions, choices, default="OK")
+    df['VALIDACAO'] = np.select(conditions, choices, default="OK")
     
     # ========== GARANTIR ESTRUTURA FINAL ==========
     
@@ -212,7 +212,7 @@ def processar_enderecos_otimizado(df_enderecos, df_roteiro_aparecida, df_roteiro
         'UCS_COMERCIAIS', 'NOME_CDO', 'ID_ENDERECO', 'LATITUDE', 'LONGITUDE', 'TIPO_SURVEY', 
         'REDE_INTERNA', 'UMS_CERTIFICADAS', 'REDE_EDIF_CERT', 'DISP_COMERCIAL', 'ESTADO_CONTROLE', 
         'DATA_ESTADO_CONTROLE', 'ID_CELULA', 'QUANTIDADE_HCS', 'ID_ROTEIRO', 'ID_LOCALIDADE', 
-        'COD_ZONA', 'ORDEM', 'RESULTADO', 'COMPARATIVO', 'NUM_ARGUMENTO3_COMPLEMENTO3', 'VALIDAÇÃO'
+        'COD_ZONA', 'ORDEM', 'RESULTADO', 'COMPARATIVO', 'NUM_ARGUMENTO3_COMPLEMENTO3', 'VALIDACAO'
     ]
     
     # Adiciona colunas faltantes
@@ -253,8 +253,8 @@ def processar_enderecos_otimizado(df_enderecos, df_roteiro_aparecida, df_roteiro
     print(f"   - Total de linhas: {len(df):,}")
     print(f"   - COMPLEMENTO3 vazios: {(df['COMPLEMENTO3'] == '').sum():,}")
     print(f"   - COMPLEMENTO2 vazios: {(df['COMPLEMENTO2'] == '').sum():,}")
-    print(f"   - Linhas com validação OK: {(df['VALIDAÇÃO'] == 'OK').sum():,}")
-    print(f"   - Linhas sem prefixo válido: {(df['VALIDAÇÃO'] == 'SEM PREFIXO VÁLIDO').sum():,}")
+    print(f"   - Linhas com validação OK: {(df['VALIDACAO'] == 'OK').sum():,}")
+    print(f"   - Linhas sem prefixo válido: {(df['VALIDACAO'] == 'SEM PREFIXO VÁLIDO').sum():,}")
     
     return df
 

@@ -76,8 +76,6 @@ logs/
 *.tar
 *.tar.gz
 *.7z
-*.csv
-*.xlsx
 *.xls
 *.xml
 *.json
