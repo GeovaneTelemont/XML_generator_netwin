@@ -1,0 +1,51 @@
+.container{ 
+    max-width: 800px;
+}
+
+.progress{
+    height: 25px;
+    margin: 20px 0;
+}
+
+.progress-bar{
+    transition: width 0.3s ease;
+}
+
+.log-container{ 
+    max-height: 300px; 
+    overflow-y: auto; 
+    background: #f8f9fa; 
+    border: 1px solid #dee2e6; 
+    border-radius: 5px; 
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.log-entry{
+    margin-bottom: 5px;
+    white-space: pre-wrap;
+}
+        
+.spinner-border{
+    margin-right: 10px;
+}
+        
+.connection-status { 
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    padding: 5px 10px; 
+    border-radius: 15px; 
+    font-size: 0.8em;
+}
+        
+.connected{
+    background: #d4edda;
+    color: #155724;
+}
+        
+.disconnected{
+    background: #f8d7da;
+    color: #721c24;
+}
