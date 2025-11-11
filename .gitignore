@@ -1,0 +1,87 @@
+
+# --- Ambientes Virtuais ---
+venv/
+env/
+.venv/
+.env/
+poetry.lock
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Flask ---
+instance/
+*.db
+*.sqlite3
+*.sqlite
+*.log
+*.pid
+*.pyc
+flask_session/
+tmp/
+.cache/
+.mypy_cache/
+.pytest_cache/
+*.coverage
+.coverage.*
+htmlcov/
+
+# --- Arquivos de Configuração ---
+*.env
+.env.*
+.envrc
+config.ini
+settings.ini
+secrets.json
+
+# --- Arquivos Temporários do Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# --- IDEs e Editores ---
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# --- Dependências e Build ---
+dist/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# --- Logs e Dumps ---
+logs/
+*.log
+*.bak
+*.swp
+*.tmp
+*.orig
+*.dmp
+
+# --- Arquivos do Sistema ---
+.DS_Store
+*.tmp
+*.lock
+
+# --- Arquivos de Dados e Exportações ---
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.csv
+*.xlsx
+*.xls
+*.xml
+*.json
+*.bak
+
+# --- Diretórios do Projeto ---
+service/__pycache__/
