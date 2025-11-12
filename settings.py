@@ -1,5 +1,11 @@
 import os, time
-from constants import SECRET_KEY, MAX_CONTENT_LENGTH, UPLOAD_FOLDER, DOWNLOAD_FOLDER 
+from constants import (
+    SECRET_KEY,
+    MAX_CONTENT_LENGTH,
+    UPLOAD_FOLDER,
+    DOWNLOAD_FOLDER,
+)
+
 
 class Config:
     def __init__(self):
@@ -20,8 +26,6 @@ class Config:
         app.config["MAX_CONTENT_LENGTH"] = self.max_content_lenght
         app.config["DOWNLOAD_FOLDER"] = self.download_folder
 
-        
-
     def limpar_arquivos_antigos(self):
         """Limpa arquivos com mais de 1 hora na pasta de downloads"""
         try:
@@ -35,4 +39,3 @@ class Config:
                         os.remove(file_path)
         except Exception as e:
             print(f"Erro ao limpar arquivos antigos: {e}")
-

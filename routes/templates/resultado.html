@@ -16,17 +16,17 @@
         </div>
 
         <div class="row mt-4">
-    <div class="col-12 text-center">
-        <a href="{{ url_for('index.download_file', filename=zip_filename) }}"
-           class="btn btn-primary btn-lg {% if alert_type == 'danger' %}disabled{% endif %}"
-           {% if alert_type == 'danger' %}tabindex="-1" aria-disabled="true"{% endif %}>
-            📥 Download do ZIP
-        </a>
-        <a href="/" class="btn btn-secondary btn-lg ms-2">
-            🔄 Processar Outro Arquivo
-        </a>
-    </div>
-</div>
+            <div class="col-12 text-center">
+                <a href="{{ url_for('index.download_file', filename=zip_filename) }}"
+                class="btn btn-primary btn-lg {% if alert_type == 'danger' %}disabled{% endif %}"
+                {% if alert_type == 'danger' %}tabindex="-1" aria-disabled="true"{% endif %}>
+                    📥 Download do ZIP
+                </a>
+                <a href="/" class="btn btn-secondary btn-lg ms-2">
+                    🔄 Processar Outro Arquivo
+                </a>
+            </div>
+        </div>
 
         <div class="row mt-5">
             <div class="col-12">
